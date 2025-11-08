@@ -1,11 +1,14 @@
-import { Subject } from './Subject';
-import { Teacher as BaseTeacher } from './Teacher';
+/// <reference path="./Teacher.ts" />
+/// <reference path="./Subject.ts" />
 
-export interface Teacher extends BaseTeacher {
+import SubjectNs = Subjects.Subject;
+import TeacherNs = Subjects.Teacher;
+
+export interface Teacher extends TeacherNs {
         experienceTeachingC?: number;
 }
 
-export class Cpp extends Subject {
+export class Cpp extends SubjectNs {
     teacher: Teacher;
 
     getRequirements(): string {

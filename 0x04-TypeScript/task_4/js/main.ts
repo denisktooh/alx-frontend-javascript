@@ -1,4 +1,3 @@
-import { Subject } from './subjects/Subject';
 import { Java, Teacher as JavaTeacher } from './subjects/Java';
 import { Cpp, Teacher as CppTeacher} from './subjects/Cpp';
 import { React, Teacher as ReactTeacher } from './subjects/React';
