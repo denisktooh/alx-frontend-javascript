@@ -39,6 +39,7 @@ const printTeacher: printTeacherFunction = function printTeacher(firstName: stri
   const teacher = { firstName, lastName };
   // return `${teacher.firstName.charAt(0)}. ${teacher.lastName}`;
   return `${firstName}. ${lastName}`;
+  // return `${firstName.charAt(0)}. ${lastName}`;
 };
 
 console.log(printTeacher("John", "Doe"));
